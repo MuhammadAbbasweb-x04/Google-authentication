@@ -6,11 +6,13 @@ signInWithPopup(auth, provider)
   .then((result) => {
     const user = result.user;
     console.log(user);
+window.location = "home.html";
+
   }).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     console.log(errorMessage);
     
   });
-})
+});
 
