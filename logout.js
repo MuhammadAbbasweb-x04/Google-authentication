@@ -7,7 +7,7 @@ const logoutbtn = document.querySelector(".logout-btn");
 onAuthStateChanged(auth, (user) => {
   if (user) {
     const uid = user.uid;
-    console.log(`User uid : ${uid}`);
+    console.log(`User logged in :${uid}`);
   } else {
 window.location = "index.html";
   }
